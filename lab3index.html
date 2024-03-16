@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;padding: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            .header{
+                padding: 50px;
+                text-align: center;
+                background: pink;
+
+            }
+            .navbar a{
+                    color: whitesmoke;
+                    padding: 15px 15px;
+                    text-decoration: none;
+                    text-align: center;
+            }
+            .navbar a:hover{
+                background-color: orange;
+                color: red;
+            }
+            .row{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .side{
+                flex: 30%;
+                background-color: aqua;
+                padding: 20px;
+            }
+            .main{
+                flex: 70%;
+                background-color: azure;
+                padding: 20px;
+            }
+            .fimg{
+                background-color: pink ;
+                width: 100%;
+                padding: 20px;
+                
+            }
+            .footer{
+                background: orange;
+                text-align: center;
+                padding: 20px;
+            }
+               @media screen and(max-width: 1000px){
+                .row .navbar{
+                    flex-direction: column;
+                }
+               }
+                
+        }   
+
+         
+    </style>
+</head>
+<body>
+    <div style="background-color: rgb(32, 205, 218); padding: 10px;">
+        <h3 style="text-align: center;">The H3</h3>
+    </div>
+    <!-- header -->
+    <div class="header">
+        <h1>Website cua toi</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident facilis dicta quia, possimus excepturi perspiciatis debitis voluptatem sed id obcaecati!</p>
+    </div>
+    <!-- menu -->
+    <div class="navbar">
+      <a href="#">Link1</a>
+      <a href="#">Link2</a>
+      <a href="#">Link3</a>
+      <a href="#">Link4</a>
+      <a href="#">Link5</a>
+    </div>
+    <!-- Content -->
+    <div class="row">
+        <div class="side">
+            <h2>Gioi Thieu</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto odit voluptatum iure natus distinctio mollitia.</h3>
+            <div class="fimg" style="height: 60px;">img</div>
+            <div class="fimg" style="height: 60px;">img</div>
+            <div class="fimg" style="height: 60px;">img</div>
+            <div class="fimg" style="height: 60px;">img</div>
+           
+        </div>
+        <!-- main -->
+        <div class="main">
+            <h2>day la main</h2>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, reprehenderit quae fuga voluptates deserunt cupiditate iure, beatae, sunt perferendis natus qui quidem voluptatibus veniam corrupti officiis non at in molestiae. Necessitatibus, magnam. Facilis officiis veritatis explicabo placeat eum dolores voluptatum maiores, mollitia velit molestiae odio veniam deleniti unde labore quis rerum eaque nesciunt sequi fuga iste inventore. Ab adipisci qui dolores inventore? Excepturi tempora qui harum accusamus corporis odit necessitatibus quisquam fugit? Quisquam, asperiores quibusdam quos alias praesentium eligendi reprehenderit provident incidunt? Recusandae, tempora hic vel saepe dolores labore temporibus enim minus quo voluptatibus officia, quibusdam, perferendis iusto dignissimos consequuntur?</h5>
+            <div class="fimg" style="height: 200px;">img</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, alias!</p>
+            <br/>
+        </div>
+        <!-- footer -->
+        
+    </div>
+    <div class="footer">
+        <h2>day la footer</h2>
+    </div>
+</body>
+</html>
